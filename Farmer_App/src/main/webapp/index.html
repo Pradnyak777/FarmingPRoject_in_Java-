@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agroforestry Data Upload</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Agroforestry Data Upload Form</h2>
+        <form action="Servlet" method="post" enctype="multipart/form-data">
+            <label for="farmerName">Farmer Name:</label>
+            <input type="text" id="farmerName" name="farmerName" required><br><br>
+
+            <label for="farmerContact">Farmer Contact:</label>
+            <input type="tel" id="farmerContact" name="farmerContact" pattern="[0-9]{10}" required><br><br>
+
+            <label for="fieldPhoto">Field Photo:</label>
+            <input type="file" id="fieldPhoto" name="fieldPhoto" required><br><br>
+
+            <label for="latitude">Latitude:</label>
+            <input type="text" id="latitude" name="latitude" required><br><br>
+
+            <label for="longitude">Longitude:</label>
+            <input type="text" id="longitude" name="longitude" required><br><br>
+            
+ 
+ 
+<lable for=treeSpices>
+      <select id="treeSpecies" name="treeSpecies">
+    <option value="" disabled selected>Choose your treeSpices</option>
+    <option value="Mango-100">Mango(100)</option>
+    <option value="apple-62">Apple(62)</option>
+    <option value="banana-55">Banana(55)</option>
+    <option value="cherry-69">Cherry(69)</option>
+    <option value="date-70">Date(70)</option>
+    <option value= "other">Other</option>
+</select>
+</lable>
+
+          
+          
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
